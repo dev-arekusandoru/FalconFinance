@@ -25,14 +25,15 @@ Partial Class Form1
         Me.test = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'test
         '
-        Me.test.Location = New System.Drawing.Point(385, 67)
+        Me.test.Location = New System.Drawing.Point(5, 290)
         Me.test.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.test.Name = "test"
-        Me.test.Size = New System.Drawing.Size(131, 74)
+        Me.test.Size = New System.Drawing.Size(190, 29)
         Me.test.TabIndex = 0
         Me.test.Text = "Button1"
         Me.test.UseVisualStyleBackColor = True
@@ -49,12 +50,13 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.test)
         Me.GroupBox1.Location = New System.Drawing.Point(25, 35)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 417)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.GroupBox1.Text = "Menu"
         '
         'Form1
         '
@@ -63,10 +65,10 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(916, 481)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.test)
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Dashboard"
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
