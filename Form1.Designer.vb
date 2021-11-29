@@ -22,10 +22,42 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.test = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'test
+        '
+        Me.test.Location = New System.Drawing.Point(239, 72)
+        Me.test.Name = "test"
+        Me.test.Size = New System.Drawing.Size(197, 115)
+        Me.test.TabIndex = 0
+        Me.test.Text = "Button1"
+        Me.test.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(239, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(60, 25)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Labe"
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.test)
+        Me.Name = "Form1"
+        Me.Text = "Dashboard"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents test As Button
+    Friend WithEvents Label1 As Label
 End Class
