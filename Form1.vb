@@ -7,4 +7,8 @@
     Private Sub test_Click(sender As Object, e As EventArgs) Handles test.Click
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class
