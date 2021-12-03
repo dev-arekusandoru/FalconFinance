@@ -25,14 +25,15 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btnLoanCalculator = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCurrencyConverter = New System.Windows.Forms.Button()
+        Me.btnInterestCalculator = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnInterestCalculator = New System.Windows.Forms.Button()
-        Me.btnCurrencyConverter = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -65,6 +66,28 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Financial Tools"
         '
+        'btnCurrencyConverter
+        '
+        Me.btnCurrencyConverter.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnCurrencyConverter.Location = New System.Drawing.Point(19, 124)
+        Me.btnCurrencyConverter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnCurrencyConverter.Name = "btnCurrencyConverter"
+        Me.btnCurrencyConverter.Size = New System.Drawing.Size(163, 30)
+        Me.btnCurrencyConverter.TabIndex = 2
+        Me.btnCurrencyConverter.Text = "Currency Converter"
+        Me.btnCurrencyConverter.UseVisualStyleBackColor = True
+        '
+        'btnInterestCalculator
+        '
+        Me.btnInterestCalculator.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnInterestCalculator.Location = New System.Drawing.Point(19, 76)
+        Me.btnInterestCalculator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnInterestCalculator.Name = "btnInterestCalculator"
+        Me.btnInterestCalculator.Size = New System.Drawing.Size(163, 30)
+        Me.btnInterestCalculator.TabIndex = 1
+        Me.btnInterestCalculator.Text = "Interest Calculator"
+        Me.btnInterestCalculator.UseVisualStyleBackColor = True
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -84,28 +107,6 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(317, 69)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "FalconFinance"
-        '
-        'btnInterestCalculator
-        '
-        Me.btnInterestCalculator.ForeColor = System.Drawing.Color.DarkBlue
-        Me.btnInterestCalculator.Location = New System.Drawing.Point(19, 76)
-        Me.btnInterestCalculator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnInterestCalculator.Name = "btnInterestCalculator"
-        Me.btnInterestCalculator.Size = New System.Drawing.Size(163, 30)
-        Me.btnInterestCalculator.TabIndex = 1
-        Me.btnInterestCalculator.Text = "Interest Calculator"
-        Me.btnInterestCalculator.UseVisualStyleBackColor = True
-        '
-        'btnCurrencyConverter
-        '
-        Me.btnCurrencyConverter.ForeColor = System.Drawing.Color.DarkBlue
-        Me.btnCurrencyConverter.Location = New System.Drawing.Point(19, 124)
-        Me.btnCurrencyConverter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnCurrencyConverter.Name = "btnCurrencyConverter"
-        Me.btnCurrencyConverter.Size = New System.Drawing.Size(163, 30)
-        Me.btnCurrencyConverter.TabIndex = 2
-        Me.btnCurrencyConverter.Text = "Currency Converter"
-        Me.btnCurrencyConverter.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -156,12 +157,23 @@ Partial Class Form1
         Me.Button5.Text = "Checking"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(282, 90)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox3.TabIndex = 6
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "GroupBox3"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
         Me.ClientSize = New System.Drawing.Size(916, 481)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -187,4 +199,5 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents GroupBox3 As GroupBox
 End Class
