@@ -4,11 +4,11 @@
 
     End Sub
 
-    Private Sub test_Click(sender As Object, e As EventArgs) Handles test.Click
+    Private Sub test_Click(sender As Object, e As EventArgs) Handles btnLoanCalculator.Click
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnCurrencyConverter.Click
 
     End Sub
 End Class
