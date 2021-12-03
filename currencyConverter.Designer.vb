@@ -26,11 +26,12 @@ Partial Class currencyConverter
         '
         'currencyConverter
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(557, 454)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "currencyConverter"
-        Me.Text = "currencyConverter"
+        Me.Text = "Currency Converter"
         Me.ResumeLayout(False)
 
     End Sub
