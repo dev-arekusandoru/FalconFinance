@@ -1,10 +1,11 @@
 ﻿Public Class Form1
-    Private Sub Label1_Click(sender As Object, e As EventArgs) 
-        //test
 
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        currencyConverter.Show()
     End Sub
 
-    Private Sub test_Click(sender As Object, e As EventArgs) Handles test.Click
-
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        currencyConverter.Hide()
     End Sub
 End Class

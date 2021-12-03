@@ -1,0 +1,13 @@
+C:\Users\Arekusandoru\source\repos\FalconFinance\bin\Debug\FalconFinance.exe.config
+C:\Users\Arekusandoru\source\repos\FalconFinance\bin\Debug\FalconFinance.exe
+C:\Users\Arekusandoru\source\repos\FalconFinance\bin\Debug\FalconFinance.pdb
+C:\Users\Arekusandoru\source\repos\FalconFinance\bin\Debug\FalconFinance.xml
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.AssemblyReference.cache
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.currencyConverter.resources
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.Form1.resources
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.Resources.resources
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.GenerateResource.cache
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.CoreCompileInputs.cache
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.exe
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.xml
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.pdb
