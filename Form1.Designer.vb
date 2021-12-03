@@ -47,7 +47,7 @@ Partial Class Form1
         Me.btnLoanCalculator.Location = New System.Drawing.Point(19, 32)
         Me.btnLoanCalculator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnLoanCalculator.Name = "btnLoanCalculator"
-        Me.btnLoanCalculator.Size = New System.Drawing.Size(163, 30)
+        Me.btnLoanCalculator.Size = New System.Drawing.Size(186, 30)
         Me.btnLoanCalculator.TabIndex = 0
         Me.btnLoanCalculator.Text = "Loan Calculator"
         Me.btnLoanCalculator.UseVisualStyleBackColor = True
@@ -63,7 +63,7 @@ Partial Class Form1
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 173)
+        Me.GroupBox1.Size = New System.Drawing.Size(223, 173)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Financial Tools"
@@ -74,7 +74,7 @@ Partial Class Form1
         Me.btnCurrencyConverter.Location = New System.Drawing.Point(19, 124)
         Me.btnCurrencyConverter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCurrencyConverter.Name = "btnCurrencyConverter"
-        Me.btnCurrencyConverter.Size = New System.Drawing.Size(163, 30)
+        Me.btnCurrencyConverter.Size = New System.Drawing.Size(186, 30)
         Me.btnCurrencyConverter.TabIndex = 2
         Me.btnCurrencyConverter.Text = "Currency Converter"
         Me.btnCurrencyConverter.UseVisualStyleBackColor = True
@@ -85,7 +85,7 @@ Partial Class Form1
         Me.btnInterestCalculator.Location = New System.Drawing.Point(19, 76)
         Me.btnInterestCalculator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnInterestCalculator.Name = "btnInterestCalculator"
-        Me.btnInterestCalculator.Size = New System.Drawing.Size(163, 30)
+        Me.btnInterestCalculator.Size = New System.Drawing.Size(186, 30)
         Me.btnInterestCalculator.TabIndex = 1
         Me.btnInterestCalculator.Text = "Interest Calculator"
         Me.btnInterestCalculator.UseVisualStyleBackColor = True
@@ -121,7 +121,7 @@ Partial Class Form1
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 173)
+        Me.GroupBox2.Size = New System.Drawing.Size(223, 173)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "User Accounts"
@@ -132,7 +132,7 @@ Partial Class Form1
         Me.Button3.Location = New System.Drawing.Point(19, 124)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(163, 30)
+        Me.Button3.Size = New System.Drawing.Size(186, 30)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Emergency Fund"
         Me.Button3.UseVisualStyleBackColor = True
@@ -143,7 +143,7 @@ Partial Class Form1
         Me.Button4.Location = New System.Drawing.Point(19, 76)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(163, 30)
+        Me.Button4.Size = New System.Drawing.Size(186, 30)
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "Savings"
         Me.Button4.UseVisualStyleBackColor = True
@@ -154,7 +154,7 @@ Partial Class Form1
         Me.Button5.Location = New System.Drawing.Point(19, 32)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(163, 30)
+        Me.Button5.Size = New System.Drawing.Size(186, 30)
         Me.Button5.TabIndex = 0
         Me.Button5.Text = "Checking"
         Me.Button5.UseVisualStyleBackColor = True
