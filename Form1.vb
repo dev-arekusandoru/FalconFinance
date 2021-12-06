@@ -8,4 +8,8 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CurrencyConverter.Hide()
     End Sub
+
+    Private Sub test_Click(sender As Object, e As EventArgs) Handles btnLoanCalculator.Click
+
+    End Sub
 End Class

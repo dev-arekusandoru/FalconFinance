@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.test = New System.Windows.Forms.Button()
+        Me.btnLoanCalculator = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -40,29 +40,29 @@ Partial Class Form1
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'test
+        'btnLoanCalculator
         '
-        Me.test.ForeColor = System.Drawing.Color.DarkBlue
-        Me.test.Location = New System.Drawing.Point(19, 32)
-        Me.test.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.test.Name = "test"
-        Me.test.Size = New System.Drawing.Size(163, 30)
-        Me.test.TabIndex = 0
-        Me.test.Text = "Loan Calculator"
-        Me.test.UseVisualStyleBackColor = True
+        Me.btnLoanCalculator.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnLoanCalculator.Location = New System.Drawing.Point(14, 26)
+        Me.btnLoanCalculator.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLoanCalculator.Name = "btnLoanCalculator"
+        Me.btnLoanCalculator.Size = New System.Drawing.Size(122, 24)
+        Me.btnLoanCalculator.TabIndex = 0
+        Me.btnLoanCalculator.Text = "Loan Calculator"
+        Me.btnLoanCalculator.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.test)
+        Me.GroupBox1.Controls.Add(Me.btnLoanCalculator)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 278)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(19, 226)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 173)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(150, 141)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Financial Tools"
@@ -70,10 +70,10 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button2.Location = New System.Drawing.Point(19, 124)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Location = New System.Drawing.Point(14, 101)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(163, 30)
+        Me.Button2.Size = New System.Drawing.Size(122, 24)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Currency Converter"
         Me.Button2.UseVisualStyleBackColor = True
@@ -81,10 +81,10 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button1.Location = New System.Drawing.Point(19, 76)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Location = New System.Drawing.Point(14, 62)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(163, 30)
+        Me.Button1.Size = New System.Drawing.Size(122, 24)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Interest Calculator"
         Me.Button1.UseVisualStyleBackColor = True
@@ -92,9 +92,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(360, 21)
+        Me.PictureBox1.Location = New System.Drawing.Point(270, 17)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(188, 113)
+        Me.PictureBox1.Size = New System.Drawing.Size(141, 92)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -103,9 +104,10 @@ Partial Class Form1
         '
         Me.Label1.Font = New System.Drawing.Font("Segoe Print", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(13, 9)
+        Me.Label1.Location = New System.Drawing.Point(10, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(328, 69)
+        Me.Label1.Size = New System.Drawing.Size(246, 56)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "FalconFinance"
         '
@@ -116,11 +118,11 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(25, 84)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Location = New System.Drawing.Point(19, 68)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 173)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(150, 141)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "User Accounts"
@@ -128,10 +130,10 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button3.Location = New System.Drawing.Point(19, 124)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Location = New System.Drawing.Point(14, 101)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(163, 30)
+        Me.Button3.Size = New System.Drawing.Size(122, 24)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Emergency Fund"
         Me.Button3.UseVisualStyleBackColor = True
@@ -139,10 +141,10 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button4.Location = New System.Drawing.Point(19, 76)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button4.Location = New System.Drawing.Point(14, 62)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(163, 30)
+        Me.Button4.Size = New System.Drawing.Size(122, 24)
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "Savings"
         Me.Button4.UseVisualStyleBackColor = True
@@ -150,10 +152,10 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button5.Location = New System.Drawing.Point(19, 32)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button5.Location = New System.Drawing.Point(14, 26)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(163, 30)
+        Me.Button5.Size = New System.Drawing.Size(122, 24)
         Me.Button5.TabIndex = 0
         Me.Button5.Text = "Checking"
         Me.Button5.UseVisualStyleBackColor = True
@@ -162,9 +164,11 @@ Partial Class Form1
         '
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox3.Location = New System.Drawing.Point(270, 170)
+        Me.GroupBox3.Location = New System.Drawing.Point(202, 138)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(285, 87)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Size = New System.Drawing.Size(214, 71)
         Me.GroupBox3.TabIndex = 6
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Checking Balance"
@@ -173,19 +177,21 @@ Partial Class Form1
         '
         Me.GroupBox4.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox4.Location = New System.Drawing.Point(270, 278)
+        Me.GroupBox4.Location = New System.Drawing.Point(202, 226)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(285, 87)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Size = New System.Drawing.Size(214, 71)
         Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Savings Balance"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
-        Me.ClientSize = New System.Drawing.Size(609, 481)
+        Me.ClientSize = New System.Drawing.Size(457, 391)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -193,7 +199,7 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "FalconFinance"
         Me.GroupBox1.ResumeLayout(False)
@@ -203,7 +209,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents test As Button
+    Friend WithEvents btnLoanCalculator As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
