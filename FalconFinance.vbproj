@@ -86,6 +86,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="InterestCalculator.Designer.vb">
+      <DependentUpon>InterestCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InterestCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoanCalculator.Designer.vb">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </Compile>

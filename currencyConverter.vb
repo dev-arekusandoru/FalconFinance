@@ -1,17 +1,12 @@
 ﻿Public Class CurrencyConverter
-    Private Sub currencyConverter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
-    End Sub
+        Dim dbleuro As 
+        Dim dblDollarAmount As String
+        Dim dblEuroAmount As String
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
-
+        If ComboBox1 Is euro Then
+            dblDollarAmount = 
+        End If
     End Sub
 End Class

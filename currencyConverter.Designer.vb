@@ -47,7 +47,7 @@ Partial Class CurrencyConverter
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"euro", "peso", "pound sterling", "franc", "rupee", "dinar", "shilling", "dinar"})
+        Me.ComboBox1.Items.AddRange(New Object() {"euro", "peso", "pound sterling", "franc", "rupee"})
         Me.ComboBox1.Location = New System.Drawing.Point(261, 86)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(174, 38)
@@ -109,19 +109,22 @@ Partial Class CurrencyConverter
         '
         'btnCalculate
         '
+        Me.btnCalculate.BackColor = System.Drawing.SystemColors.Control
+        Me.btnCalculate.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.DarkBlue
         Me.btnCalculate.Location = New System.Drawing.Point(481, 159)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(124, 33)
         Me.btnCalculate.TabIndex = 7
-        Me.btnCalculate.Text = "Button1"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = False
         '
         'CurrencyConverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkBlue
-        Me.ClientSize = New System.Drawing.Size(647, 307)
+        Me.ClientSize = New System.Drawing.Size(638, 307)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblDollarAmount)
         Me.Controls.Add(Me.Label4)
