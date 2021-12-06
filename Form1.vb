@@ -2,10 +2,10 @@
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        currencyConverter.Show()
+        CurrencyConverter.Show()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        currencyConverter.Hide()
+        CurrencyConverter.Hide()
     End Sub
 End Class
