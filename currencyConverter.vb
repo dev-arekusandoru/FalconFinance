@@ -20,6 +20,7 @@
         Dim dblAmount As Integer = txtAmount.Text
         Dim strType As String = ComboBox1.Text
         Dim dblDollarAmount As Integer
+        Dim strMessage As String = "You have neglected to select a currency type!"
 
         If strType = "euro" Then
             dblDollarAmount = dblAmount * 1.128
@@ -32,23 +33,10 @@
         ElseIf strType = "rupee" Then
             dblDollarAmount = dblAmount * 0.0132573
         Else
-            MessageBox.Show(Message)
+            MessageBox.Show(strMessage, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
 
-        Select Case strType
-            Case Is = "euro"
-                dblDollarAmount = dblAmount * 1.128
-            Case Is = "peso"
-                dblDollarAmount = dblAmount * 0.04708
-            Case Is = "pound sterling"
-                dblDollarAmount = dblAmount * 1.323
-            Case Is = "franc"
-                dblDollarAmount = dblAmount * 0.1714
-            Case Is = "rupee"
-                dblDollarAmount = dblAmount * 0.0132573
-        End Select
-
-        ' dblDollarAmount = Math.Round(dblDollarAmount, 2)
+        dblDollarAmount = Math.Round(dblDollarAmount, 2)
         lblDollarAmount.Text = dblDollarAmount.ToString()
 
     End Sub
@@ -66,8 +54,5 @@
             e.Handled = True
         End If
     End Sub
-
-    ' Message Box 
-
 
 End Class
