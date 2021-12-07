@@ -30,6 +30,7 @@ Partial Class CurrencyConverter
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblDollarAmount = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -80,7 +81,7 @@ Partial Class CurrencyConverter
         'txtAmount
         '
         Me.txtAmount.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmount.Location = New System.Drawing.Point(261, 159)
+        Me.txtAmount.Location = New System.Drawing.Point(261, 162)
         Me.txtAmount.Name = "txtAmount"
         Me.txtAmount.Size = New System.Drawing.Size(174, 34)
         Me.txtAmount.TabIndex = 4
@@ -119,12 +120,25 @@ Partial Class CurrencyConverter
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = False
         '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.SystemColors.Control
+        Me.btnExit.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnExit.Location = New System.Drawing.Point(481, 234)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(124, 33)
+        Me.btnExit.TabIndex = 8
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.UseVisualStyleBackColor = False
+        '
         'CurrencyConverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkBlue
         Me.ClientSize = New System.Drawing.Size(638, 307)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblDollarAmount)
         Me.Controls.Add(Me.Label4)
@@ -149,4 +163,5 @@ Partial Class CurrencyConverter
     Friend WithEvents Label4 As Label
     Friend WithEvents lblDollarAmount As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnExit As Button
 End Class
