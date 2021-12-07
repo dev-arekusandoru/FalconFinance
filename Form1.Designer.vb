@@ -38,9 +38,15 @@ Partial Class Form1
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnTransfer = New System.Windows.Forms.Button()
+        Me.lblCheckingBalance = New System.Windows.Forms.Label()
+        Me.lblSavingsBalance = New System.Windows.Forms.Label()
+        Me.lblEmergencyFundBalance = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnLoanCalculator
@@ -165,6 +171,7 @@ Partial Class Form1
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.lblCheckingBalance)
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox3.Location = New System.Drawing.Point(320, 171)
@@ -178,6 +185,7 @@ Partial Class Form1
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.lblSavingsBalance)
         Me.GroupBox4.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox4.Location = New System.Drawing.Point(320, 278)
@@ -191,6 +199,7 @@ Partial Class Form1
         '
         'GroupBox5
         '
+        Me.GroupBox5.Controls.Add(Me.lblEmergencyFundBalance)
         Me.GroupBox5.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox5.Location = New System.Drawing.Point(320, 390)
@@ -225,6 +234,27 @@ Partial Class Form1
         Me.btnTransfer.Text = "Transfer"
         Me.btnTransfer.UseVisualStyleBackColor = True
         '
+        'lblCheckingBalance
+        '
+        Me.lblCheckingBalance.Location = New System.Drawing.Point(35, 42)
+        Me.lblCheckingBalance.Name = "lblCheckingBalance"
+        Me.lblCheckingBalance.Size = New System.Drawing.Size(189, 31)
+        Me.lblCheckingBalance.TabIndex = 0
+        '
+        'lblSavingsBalance
+        '
+        Me.lblSavingsBalance.Location = New System.Drawing.Point(35, 42)
+        Me.lblSavingsBalance.Name = "lblSavingsBalance"
+        Me.lblSavingsBalance.Size = New System.Drawing.Size(189, 31)
+        Me.lblSavingsBalance.TabIndex = 1
+        '
+        'lblEmergencyFundBalance
+        '
+        Me.lblEmergencyFundBalance.Location = New System.Drawing.Point(35, 42)
+        Me.lblEmergencyFundBalance.Name = "lblEmergencyFundBalance"
+        Me.lblEmergencyFundBalance.Size = New System.Drawing.Size(189, 31)
+        Me.lblEmergencyFundBalance.TabIndex = 1
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -246,6 +276,9 @@ Partial Class Form1
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -265,4 +298,7 @@ Partial Class Form1
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Button2 As Button
     Friend WithEvents btnTransfer As Button
+    Friend WithEvents lblCheckingBalance As Label
+    Friend WithEvents lblSavingsBalance As Label
+    Friend WithEvents lblEmergencyFundBalance As Label
 End Class
