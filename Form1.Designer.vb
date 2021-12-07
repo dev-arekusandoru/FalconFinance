@@ -26,17 +26,18 @@ Partial Class Form1
         Me.btnLoanCalculator = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnCurrencyConverter = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnInterestCalculator = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
+        Me.btnWithdraw = New System.Windows.Forms.Button()
+        Me.btnDeposit = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnTransfer = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -56,11 +57,11 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.btnCurrencyConverter)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btnInterestCalculator)
         Me.GroupBox1.Controls.Add(Me.btnLoanCalculator)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 292)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 351)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -80,16 +81,16 @@ Partial Class Form1
         Me.btnCurrencyConverter.Text = "Currency Converter"
         Me.btnCurrencyConverter.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnInterestCalculator
         '
-        Me.Button1.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button1.Location = New System.Drawing.Point(19, 91)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(196, 34)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Interest Calculator"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnInterestCalculator.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnInterestCalculator.Location = New System.Drawing.Point(19, 91)
+        Me.btnInterestCalculator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnInterestCalculator.Name = "btnInterestCalculator"
+        Me.btnInterestCalculator.Size = New System.Drawing.Size(196, 34)
+        Me.btnInterestCalculator.TabIndex = 1
+        Me.btnInterestCalculator.Text = "Interest Calculator"
+        Me.btnInterestCalculator.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -114,52 +115,53 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.Button5)
+        Me.GroupBox2.Controls.Add(Me.btnTransfer)
+        Me.GroupBox2.Controls.Add(Me.btnSettings)
+        Me.GroupBox2.Controls.Add(Me.btnWithdraw)
+        Me.GroupBox2.Controls.Add(Me.btnDeposit)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox2.Location = New System.Drawing.Point(25, 84)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 174)
+        Me.GroupBox2.Size = New System.Drawing.Size(240, 247)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "User Accounts"
+        Me.GroupBox2.Text = "Actions"
         '
-        'Button3
+        'btnSettings
         '
-        Me.Button3.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button3.Location = New System.Drawing.Point(19, 124)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(163, 30)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Emergency Fund"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSettings.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnSettings.Location = New System.Drawing.Point(19, 194)
+        Me.btnSettings.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(196, 36)
+        Me.btnSettings.TabIndex = 2
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnWithdraw
         '
-        Me.Button4.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button4.Location = New System.Drawing.Point(19, 76)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(163, 30)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "Savings"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnWithdraw.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnWithdraw.Location = New System.Drawing.Point(19, 87)
+        Me.btnWithdraw.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnWithdraw.Name = "btnWithdraw"
+        Me.btnWithdraw.Size = New System.Drawing.Size(196, 34)
+        Me.btnWithdraw.TabIndex = 1
+        Me.btnWithdraw.Text = "Withdraw"
+        Me.btnWithdraw.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnDeposit
         '
-        Me.Button5.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Button5.Location = New System.Drawing.Point(19, 32)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(163, 30)
-        Me.Button5.TabIndex = 0
-        Me.Button5.Text = "Checking"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnDeposit.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnDeposit.Location = New System.Drawing.Point(19, 38)
+        Me.btnDeposit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnDeposit.Name = "btnDeposit"
+        Me.btnDeposit.Size = New System.Drawing.Size(196, 33)
+        Me.btnDeposit.TabIndex = 0
+        Me.btnDeposit.Text = "Deposit"
+        Me.btnDeposit.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -191,7 +193,7 @@ Partial Class Form1
         '
         Me.GroupBox5.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox5.Location = New System.Drawing.Point(320, 402)
+        Me.GroupBox5.Location = New System.Drawing.Point(320, 390)
         Me.GroupBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -211,6 +213,17 @@ Partial Class Form1
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "E&xit"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'btnTransfer
+        '
+        Me.btnTransfer.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnTransfer.Location = New System.Drawing.Point(19, 138)
+        Me.btnTransfer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnTransfer.Name = "btnTransfer"
+        Me.btnTransfer.Size = New System.Drawing.Size(196, 36)
+        Me.btnTransfer.TabIndex = 3
+        Me.btnTransfer.Text = "Transfer"
+        Me.btnTransfer.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -242,13 +255,14 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCurrencyConverter As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnInterestCalculator As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnSettings As Button
+    Friend WithEvents btnWithdraw As Button
+    Friend WithEvents btnDeposit As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents btnTransfer As Button
 End Class

@@ -216,7 +216,7 @@ Partial Class UserLogin
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "UserLogin"
-        Me.Text = "New User"
+        Me.Text = "Login/Sign-Up"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
