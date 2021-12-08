@@ -11,6 +11,7 @@ C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.exe
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.xml
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.pdb
+<<<<<<< Updated upstream
 C:\Users\kylie\Source\Repos\FalconFinance1\bin\Debug\users.mdb
 C:\Users\kylie\Source\Repos\FalconFinance1\bin\Debug\FalconFinance.exe.config
 C:\Users\kylie\Source\Repos\FalconFinance1\bin\Debug\FalconFinance.exe
@@ -27,3 +28,16 @@ C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.vbproj.CoreCo
 C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.exe
 C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.xml
 C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.pdb
+=======
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.AssemblyReference.cache
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.CurrencyConverter.resources
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.Form1.resources
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.LoanCalculator.resources
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.Resources.resources
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.UserLogin.resources
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.GenerateResource.cache
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.CoreCompileInputs.cache
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.exe
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.xml
+C:\Users\janec\source\repos\FalconFinance\obj\Debug\FalconFinance.pdb
+>>>>>>> Stashed changes
