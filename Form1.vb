@@ -1,11 +1,53 @@
-﻿Public Class Form1
+﻿Imports System.Data.OleDb
+Public Class Form1
+    Private Const ConnectionString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Databases\users.mdb"
+    Private con As OleDbConnection
+    Private cmd As OleDbCommand
+
+    Public tableId As Integer
+
+    Dim fullName As String
+    Dim checkingBal As Double
+    Dim savingBal As Double
+    Dim emergencyBal As Double
+    Dim checkingP As Double
+    Dim savingP As Double
+    Dim emergencyP As Double
+
 
     ' Hides all other forms when Form 1 is open
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CurrencyConverter.Hide()
         LoanCalculator.Hide()
         InterestCalculator.Hide()
-        UserLogin.Hide()
+
+        Dim reader As OleDbDataReader = Nothing
+        Using con = New OleDbConnection(ConnectionString)
+            cmd = New OleDbCommand()
+            cmd.CommandText = "SELECT * FROM users WHERE ID = " & tableId
+            cmd.Connection = con
+            con.Open()
+            reader = cmd.ExecuteReader
+
+
+            While reader.Read
+                fullName = reader.GetValue(4) & " " & reader.GetValue(5)
+                checkingBal = reader.GetValue(6).ToString
+                savingBal = reader.GetValue(7).ToString
+                emergencyBal = reader.GetValue(8).ToString
+                checkingP = reader.GetValue(9).ToString
+                savingP = reader.GetValue(10).ToString
+                emergencyP = (reader.GetValue(9) - reader.GetValue(10)).ToString
+            End While
+
+            con.Close()
+        End Using
+
+        lblCheckingBalance.Text = checkingBal.ToString("c2")
+        lblSavingsBalance.Text = savingBal.ToString("c2")
+        lblEmergencyFundBalance.Text = emergencyBal.ToString("c2")
+        lblWelcome.Text = fullName
+
     End Sub
 
     ' Show the Currency Converter form when button is clicked
