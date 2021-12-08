@@ -6,6 +6,7 @@
         InterestCalculator.Hide()
         LoanCalculator.Hide()
         UserLogin.Hide()
+
     End Sub
 
     ' Clears Dollar Amount if Type or Amount is changed
@@ -17,9 +18,9 @@
 
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
-        Dim dblAmount As Integer = txtAmount.Text
+        Dim dblAmount As Double = txtAmount.Text
         Dim strType As String = ComboBox1.Text
-        Dim dblDollarAmount As Integer
+        Dim dblDollarAmount As Double
         Dim strMessage As String = "You have neglected to select a currency type!"
 
         If strType = "euro" Then
@@ -36,8 +37,8 @@
             MessageBox.Show(strMessage, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
 
-        dblDollarAmount = Math.Round(dblDollarAmount, 2)
-        lblDollarAmount.Text = dblDollarAmount.ToString()
+
+        lblDollarAmount.Text = dblDollarAmount.ToString("C2")
 
     End Sub
 

@@ -12,6 +12,11 @@
     Private Sub btnCurrencyConverter_Click(sender As Object, e As EventArgs) Handles btnCurrencyConverter.Click
         CurrencyConverter.Show()
         Me.Hide()
+
+        CurrencyConverter.lblDollarAmount.Text = String.Empty
+        CurrencyConverter.txtAmount.Text = String.Empty
+        CurrencyConverter.ComboBox1.SelectedIndex = -1
+
     End Sub
 
     ' Show the Loan Calculator form when button is clicked
@@ -38,7 +43,7 @@
         Dim dblSavingsBalance As Integer
         Dim dblEmergencyBalance As Integer
 
-        Integer.TryParse()
+        ' Integer.TryParse()
 
         If strAccount = "Checking" Or "checking" Then
             dblCheckingBalance = dblCheckingBalance + strMoney
