@@ -52,6 +52,7 @@ Partial Class Form1
         '
         'btnLoanCalculator
         '
+        Me.btnLoanCalculator.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLoanCalculator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnLoanCalculator.Location = New System.Drawing.Point(28, 61)
         Me.btnLoanCalculator.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -79,6 +80,7 @@ Partial Class Form1
         '
         'btnCurrencyConverter
         '
+        Me.btnCurrencyConverter.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCurrencyConverter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnCurrencyConverter.Location = New System.Drawing.Point(28, 227)
         Me.btnCurrencyConverter.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -90,6 +92,7 @@ Partial Class Form1
         '
         'btnInterestCalculator
         '
+        Me.btnInterestCalculator.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnInterestCalculator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnInterestCalculator.Location = New System.Drawing.Point(28, 142)
         Me.btnInterestCalculator.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -140,6 +143,7 @@ Partial Class Form1
         '
         'btnTransfer
         '
+        Me.btnTransfer.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTransfer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnTransfer.Location = New System.Drawing.Point(28, 216)
         Me.btnTransfer.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -151,6 +155,7 @@ Partial Class Form1
         '
         'btnSettings
         '
+        Me.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSettings.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnSettings.Location = New System.Drawing.Point(28, 303)
         Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -162,6 +167,7 @@ Partial Class Form1
         '
         'btnWithdraw
         '
+        Me.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnWithdraw.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnWithdraw.Location = New System.Drawing.Point(28, 136)
         Me.btnWithdraw.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -173,6 +179,7 @@ Partial Class Form1
         '
         'btnDeposit
         '
+        Me.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDeposit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnDeposit.Location = New System.Drawing.Point(28, 59)
         Me.btnDeposit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -256,8 +263,9 @@ Partial Class Form1
         '
         'Button2
         '
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.Font = New System.Drawing.Font("Calibri", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.DarkBlue
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(658, 805)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button2.Name = "Button2"
