@@ -37,20 +37,14 @@
     End Sub
 
     Private Sub btnDeposit_Click(sender As Object, e As EventArgs) Handles btnDeposit.Click
-        Dim strAccount As String = InputBox("What account?")
+
         Dim strMoney As String = InputBox("Amount?")
-        Dim dblCheckingBalance As Integer
-        Dim dblSavingsBalance As Integer
-        Dim dblEmergencyBalance As Integer
 
-        ' Integer.TryParse()
+    End Sub
 
-        If strAccount = "Checking" Or "checking" Then
-            dblCheckingBalance = dblCheckingBalance + strMoney
-        ElseIf strAccount = "Savings" Or "savings" Then
-            dblSavingsBalance = dblSavingsBalance + strMoney
-        ElseIf strAccount = "Emergency Fund" Or "emergency fund" Or "Emergency fund" Then
-            dblEmergencyBalance = dblEmergencyBalance + strMoney
-        End If
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        Dim strCheckingPercentage As String = InputBox("What percentage goes to Checking?")
+        Dim strSavingsPercentage As String = InputBox("What percentage goes to Savings?")
+        Dim strEmergencyFundPercentage As String = InputBox("What percentage goes to Emergency Fund?")
     End Sub
 End Class
