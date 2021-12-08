@@ -98,4 +98,7 @@
         lstAmounts.Items.Clear()
     End Sub
 
+    Private Sub LoanCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
