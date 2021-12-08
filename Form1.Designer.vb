@@ -52,7 +52,7 @@ Partial Class Form1
         '
         'btnLoanCalculator
         '
-        Me.btnLoanCalculator.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnLoanCalculator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnLoanCalculator.Location = New System.Drawing.Point(28, 61)
         Me.btnLoanCalculator.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnLoanCalculator.Name = "btnLoanCalculator"
@@ -66,7 +66,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.btnCurrencyConverter)
         Me.GroupBox1.Controls.Add(Me.btnInterestCalculator)
         Me.GroupBox1.Controls.Add(Me.btnLoanCalculator)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Calibri", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox1.Location = New System.Drawing.Point(38, 548)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -79,7 +79,7 @@ Partial Class Form1
         '
         'btnCurrencyConverter
         '
-        Me.btnCurrencyConverter.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnCurrencyConverter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnCurrencyConverter.Location = New System.Drawing.Point(28, 227)
         Me.btnCurrencyConverter.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnCurrencyConverter.Name = "btnCurrencyConverter"
@@ -90,7 +90,7 @@ Partial Class Form1
         '
         'btnInterestCalculator
         '
-        Me.btnInterestCalculator.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnInterestCalculator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnInterestCalculator.Location = New System.Drawing.Point(28, 142)
         Me.btnInterestCalculator.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnInterestCalculator.Name = "btnInterestCalculator"
@@ -112,7 +112,7 @@ Partial Class Form1
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Segoe Print", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 28.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.Location = New System.Drawing.Point(20, 6)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -127,7 +127,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.btnSettings)
         Me.GroupBox2.Controls.Add(Me.btnWithdraw)
         Me.GroupBox2.Controls.Add(Me.btnDeposit)
-        Me.GroupBox2.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox2.Location = New System.Drawing.Point(38, 140)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -140,7 +140,7 @@ Partial Class Form1
         '
         'btnTransfer
         '
-        Me.btnTransfer.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnTransfer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnTransfer.Location = New System.Drawing.Point(28, 216)
         Me.btnTransfer.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnTransfer.Name = "btnTransfer"
@@ -151,7 +151,7 @@ Partial Class Form1
         '
         'btnSettings
         '
-        Me.btnSettings.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnSettings.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnSettings.Location = New System.Drawing.Point(28, 303)
         Me.btnSettings.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnSettings.Name = "btnSettings"
@@ -162,7 +162,7 @@ Partial Class Form1
         '
         'btnWithdraw
         '
-        Me.btnWithdraw.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnWithdraw.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnWithdraw.Location = New System.Drawing.Point(28, 136)
         Me.btnWithdraw.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnWithdraw.Name = "btnWithdraw"
@@ -173,7 +173,7 @@ Partial Class Form1
         '
         'btnDeposit
         '
-        Me.btnDeposit.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnDeposit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnDeposit.Location = New System.Drawing.Point(28, 59)
         Me.btnDeposit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btnDeposit.Name = "btnDeposit"
@@ -185,7 +185,7 @@ Partial Class Form1
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.lblCheckingBalance)
-        Me.GroupBox3.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Calibri", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox3.Location = New System.Drawing.Point(480, 267)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -198,16 +198,18 @@ Partial Class Form1
         '
         'lblCheckingBalance
         '
-        Me.lblCheckingBalance.Location = New System.Drawing.Point(52, 66)
+        Me.lblCheckingBalance.BackColor = System.Drawing.Color.Transparent
+        Me.lblCheckingBalance.Location = New System.Drawing.Point(0, 66)
         Me.lblCheckingBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCheckingBalance.Name = "lblCheckingBalance"
-        Me.lblCheckingBalance.Size = New System.Drawing.Size(284, 48)
+        Me.lblCheckingBalance.Size = New System.Drawing.Size(428, 48)
         Me.lblCheckingBalance.TabIndex = 0
+        Me.lblCheckingBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.lblSavingsBalance)
-        Me.GroupBox4.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Font = New System.Drawing.Font("Calibri", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox4.Location = New System.Drawing.Point(480, 434)
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -220,16 +222,18 @@ Partial Class Form1
         '
         'lblSavingsBalance
         '
-        Me.lblSavingsBalance.Location = New System.Drawing.Point(52, 66)
+        Me.lblSavingsBalance.BackColor = System.Drawing.Color.Transparent
+        Me.lblSavingsBalance.Location = New System.Drawing.Point(0, 66)
         Me.lblSavingsBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSavingsBalance.Name = "lblSavingsBalance"
-        Me.lblSavingsBalance.Size = New System.Drawing.Size(284, 48)
+        Me.lblSavingsBalance.Size = New System.Drawing.Size(428, 48)
         Me.lblSavingsBalance.TabIndex = 1
+        Me.lblSavingsBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GroupBox5
         '
         Me.GroupBox5.Controls.Add(Me.lblEmergencyFundBalance)
-        Me.GroupBox5.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.Font = New System.Drawing.Font("Calibri", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox5.Location = New System.Drawing.Point(480, 609)
         Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -242,15 +246,17 @@ Partial Class Form1
         '
         'lblEmergencyFundBalance
         '
-        Me.lblEmergencyFundBalance.Location = New System.Drawing.Point(52, 66)
+        Me.lblEmergencyFundBalance.BackColor = System.Drawing.Color.Transparent
+        Me.lblEmergencyFundBalance.Location = New System.Drawing.Point(0, 66)
         Me.lblEmergencyFundBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEmergencyFundBalance.Name = "lblEmergencyFundBalance"
-        Me.lblEmergencyFundBalance.Size = New System.Drawing.Size(284, 48)
+        Me.lblEmergencyFundBalance.Size = New System.Drawing.Size(428, 48)
         Me.lblEmergencyFundBalance.TabIndex = 1
+        Me.lblEmergencyFundBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Segoe Print", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Calibri", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.DarkBlue
         Me.Button2.Location = New System.Drawing.Point(658, 805)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
@@ -263,12 +269,12 @@ Partial Class Form1
         'lblWelcome
         '
         Me.lblWelcome.BackColor = System.Drawing.Color.Transparent
-        Me.lblWelcome.Font = New System.Drawing.Font("Segoe Print", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblWelcome.Font = New System.Drawing.Font("Calibri", 15.0!, System.Drawing.FontStyle.Bold)
         Me.lblWelcome.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblWelcome.Location = New System.Drawing.Point(38, 96)
+        Me.lblWelcome.Location = New System.Drawing.Point(38, 91)
         Me.lblWelcome.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(440, 61)
+        Me.lblWelcome.Size = New System.Drawing.Size(440, 46)
         Me.lblWelcome.TabIndex = 10
         Me.lblWelcome.Text = "Welcome"
         '
@@ -276,7 +282,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Navy
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(975, 892)
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.Button2)

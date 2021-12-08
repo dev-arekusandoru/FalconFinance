@@ -48,7 +48,6 @@ Public Class UserLogin
 
     End Sub
 
-
     Private Sub validateLogin(u As String, p As String)
         Dim checkU As String = u
         Dim checkP As String = p

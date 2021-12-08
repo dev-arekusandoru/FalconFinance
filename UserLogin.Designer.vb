@@ -46,12 +46,12 @@ Partial Class UserLogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe Print", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 16.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.Location = New System.Drawing.Point(39, 41)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(619, 79)
+        Me.Label1.Size = New System.Drawing.Size(502, 53)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to FalconFinance"
         '
@@ -62,7 +62,7 @@ Partial Class UserLogin
         Me.GroupBox1.Controls.Add(Me.txtPassword)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtUsername)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox1.Location = New System.Drawing.Point(52, 180)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -87,10 +87,11 @@ Partial Class UserLogin
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(32, 239)
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(32, 231)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(155, 50)
+        Me.Label3.Size = New System.Drawing.Size(144, 39)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Password"
         '
@@ -99,16 +100,17 @@ Partial Class UserLogin
         Me.txtPassword.Location = New System.Drawing.Point(218, 227)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(188, 56)
+        Me.txtPassword.Size = New System.Drawing.Size(188, 47)
         Me.txtPassword.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(32, 111)
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(32, 103)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(163, 50)
+        Me.Label2.Size = New System.Drawing.Size(153, 39)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Username"
         '
@@ -117,7 +119,7 @@ Partial Class UserLogin
         Me.txtUsername.Location = New System.Drawing.Point(218, 98)
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(188, 56)
+        Me.txtUsername.Size = New System.Drawing.Size(188, 47)
         Me.txtUsername.TabIndex = 0
         '
         'GroupBox2
@@ -131,7 +133,7 @@ Partial Class UserLogin
         Me.GroupBox2.Controls.Add(Me.txtPassword1)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.txtEmail)
-        Me.GroupBox2.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
         Me.GroupBox2.Location = New System.Drawing.Point(684, 41)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -145,10 +147,11 @@ Partial Class UserLogin
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(26, 280)
+        Me.Label7.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(26, 275)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(174, 50)
+        Me.Label7.Size = New System.Drawing.Size(157, 39)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "Last Name"
         '
@@ -157,16 +160,17 @@ Partial Class UserLogin
         Me.txtLastName.Location = New System.Drawing.Point(218, 269)
         Me.txtLastName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(188, 56)
+        Me.txtLastName.Size = New System.Drawing.Size(188, 47)
         Me.txtLastName.TabIndex = 7
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 184)
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(26, 179)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(179, 50)
+        Me.Label6.Size = New System.Drawing.Size(161, 39)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "First Name"
         '
@@ -175,7 +179,7 @@ Partial Class UserLogin
         Me.txtFirstName.Location = New System.Drawing.Point(218, 173)
         Me.txtFirstName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(188, 56)
+        Me.txtFirstName.Size = New System.Drawing.Size(188, 47)
         Me.txtFirstName.TabIndex = 5
         '
         'btnSignUp
@@ -192,10 +196,11 @@ Partial Class UserLogin
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(32, 378)
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(32, 373)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(155, 50)
+        Me.Label4.Size = New System.Drawing.Size(144, 39)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Password"
         '
@@ -204,16 +209,17 @@ Partial Class UserLogin
         Me.txtPassword1.Location = New System.Drawing.Point(218, 366)
         Me.txtPassword1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtPassword1.Name = "txtPassword1"
-        Me.txtPassword1.Size = New System.Drawing.Size(188, 56)
+        Me.txtPassword1.Size = New System.Drawing.Size(188, 47)
         Me.txtPassword1.TabIndex = 2
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(26, 86)
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(26, 81)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(101, 50)
+        Me.Label5.Size = New System.Drawing.Size(91, 39)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Email"
         '
@@ -222,14 +228,14 @@ Partial Class UserLogin
         Me.txtEmail.Location = New System.Drawing.Point(218, 75)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(188, 56)
+        Me.txtEmail.Size = New System.Drawing.Size(188, 47)
         Me.txtEmail.TabIndex = 0
         '
         'UserLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1215, 703)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

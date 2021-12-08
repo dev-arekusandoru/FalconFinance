@@ -31,13 +31,13 @@ Public Class Form1
 
 
             While reader.Read
-                fullName = reader.GetValue(4) & " " & reader.GetValue(5)
-                checkingBal = reader.GetValue(6).ToString
-                savingBal = reader.GetValue(7).ToString
-                emergencyBal = reader.GetValue(8).ToString
-                checkingP = reader.GetValue(9).ToString
-                savingP = reader.GetValue(10).ToString
-                emergencyP = (reader.GetValue(9) - reader.GetValue(10)).ToString
+                fullName = reader.GetValue(3) & " " & reader.GetValue(4)
+                checkingBal = reader.GetValue(5)
+                savingBal = reader.GetValue(6)
+                emergencyBal = reader.GetValue(7)
+                savingP = reader.GetValue(8)
+                emergencyP = reader.GetValue(9)
+                checkingP = 100 - (reader.GetValue(8) + reader.GetValue(9))
             End While
 
             con.Close()
@@ -46,7 +46,7 @@ Public Class Form1
         lblCheckingBalance.Text = checkingBal.ToString("c2")
         lblSavingsBalance.Text = savingBal.ToString("c2")
         lblEmergencyFundBalance.Text = emergencyBal.ToString("c2")
-        lblWelcome.Text = fullName
+        lblWelcome.Text += ", " & fullName.Substring(0, fullName.IndexOf(" "))
 
     End Sub
 
@@ -95,4 +95,7 @@ Public Class Form1
             dblEmergencyBalance = dblEmergencyBalance + strMoney
         End If
     End Sub
+
+
+
 End Class
