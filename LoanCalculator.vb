@@ -1,6 +1,15 @@
 ﻿Public Class LoanCalculator
+    Private Sub LoanCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CurrencyConverter.Hide()
+        Form1.Hide()
+        InterestCalculator.Hide()
+        UserLogin.Hide()
+    End Sub
+
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
-        Me.Close()
+        Form1.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub Handle_DoubleInputs(sender As Object, e As KeyPressEventArgs) Handles txtPrincipal.KeyPress, txtRate.KeyPress
@@ -80,7 +89,7 @@
                 & vbTab & dblBalance.ToString("C2"))
 
         Next
-
+        'comment
     End Sub
     Private Sub txtPrincipal_TextChanged(sender As Object, e As EventArgs) Handles txtPrincipal.TextChanged
         lstAmounts.Items.Clear()
