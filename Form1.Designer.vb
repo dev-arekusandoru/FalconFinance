@@ -52,6 +52,7 @@ Partial Class Form1
         '
         'btnLoanCalculator
         '
+        Me.btnLoanCalculator.BackColor = System.Drawing.SystemColors.Window
         Me.btnLoanCalculator.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLoanCalculator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnLoanCalculator.Location = New System.Drawing.Point(28, 61)
@@ -60,7 +61,7 @@ Partial Class Form1
         Me.btnLoanCalculator.Size = New System.Drawing.Size(294, 52)
         Me.btnLoanCalculator.TabIndex = 0
         Me.btnLoanCalculator.Text = "Loan Calculator"
-        Me.btnLoanCalculator.UseVisualStyleBackColor = True
+        Me.btnLoanCalculator.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -80,6 +81,7 @@ Partial Class Form1
         '
         'btnCurrencyConverter
         '
+        Me.btnCurrencyConverter.BackColor = System.Drawing.SystemColors.Window
         Me.btnCurrencyConverter.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCurrencyConverter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnCurrencyConverter.Location = New System.Drawing.Point(28, 227)
@@ -88,10 +90,11 @@ Partial Class Form1
         Me.btnCurrencyConverter.Size = New System.Drawing.Size(294, 52)
         Me.btnCurrencyConverter.TabIndex = 2
         Me.btnCurrencyConverter.Text = "Currency Converter"
-        Me.btnCurrencyConverter.UseVisualStyleBackColor = True
+        Me.btnCurrencyConverter.UseVisualStyleBackColor = False
         '
         'btnInterestCalculator
         '
+        Me.btnInterestCalculator.BackColor = System.Drawing.SystemColors.Window
         Me.btnInterestCalculator.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnInterestCalculator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnInterestCalculator.Location = New System.Drawing.Point(28, 142)
@@ -100,7 +103,7 @@ Partial Class Form1
         Me.btnInterestCalculator.Size = New System.Drawing.Size(294, 53)
         Me.btnInterestCalculator.TabIndex = 1
         Me.btnInterestCalculator.Text = "Interest Calculator"
-        Me.btnInterestCalculator.UseVisualStyleBackColor = True
+        Me.btnInterestCalculator.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -143,6 +146,7 @@ Partial Class Form1
         '
         'btnTransfer
         '
+        Me.btnTransfer.BackColor = System.Drawing.SystemColors.Window
         Me.btnTransfer.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTransfer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnTransfer.Location = New System.Drawing.Point(28, 216)
@@ -151,10 +155,11 @@ Partial Class Form1
         Me.btnTransfer.Size = New System.Drawing.Size(294, 56)
         Me.btnTransfer.TabIndex = 3
         Me.btnTransfer.Text = "Transfer"
-        Me.btnTransfer.UseVisualStyleBackColor = True
+        Me.btnTransfer.UseVisualStyleBackColor = False
         '
         'btnSettings
         '
+        Me.btnSettings.BackColor = System.Drawing.SystemColors.Window
         Me.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSettings.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnSettings.Location = New System.Drawing.Point(28, 303)
@@ -163,10 +168,11 @@ Partial Class Form1
         Me.btnSettings.Size = New System.Drawing.Size(294, 56)
         Me.btnSettings.TabIndex = 2
         Me.btnSettings.Text = "Settings"
-        Me.btnSettings.UseVisualStyleBackColor = True
+        Me.btnSettings.UseVisualStyleBackColor = False
         '
         'btnWithdraw
         '
+        Me.btnWithdraw.BackColor = System.Drawing.SystemColors.Window
         Me.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnWithdraw.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnWithdraw.Location = New System.Drawing.Point(28, 136)
@@ -175,10 +181,11 @@ Partial Class Form1
         Me.btnWithdraw.Size = New System.Drawing.Size(294, 53)
         Me.btnWithdraw.TabIndex = 1
         Me.btnWithdraw.Text = "Withdraw"
-        Me.btnWithdraw.UseVisualStyleBackColor = True
+        Me.btnWithdraw.UseVisualStyleBackColor = False
         '
         'btnDeposit
         '
+        Me.btnDeposit.BackColor = System.Drawing.SystemColors.Window
         Me.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDeposit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnDeposit.Location = New System.Drawing.Point(28, 59)
@@ -187,7 +194,7 @@ Partial Class Form1
         Me.btnDeposit.Size = New System.Drawing.Size(294, 52)
         Me.btnDeposit.TabIndex = 0
         Me.btnDeposit.Text = "Deposit"
-        Me.btnDeposit.UseVisualStyleBackColor = True
+        Me.btnDeposit.UseVisualStyleBackColor = False
         '
         'GroupBox3
         '

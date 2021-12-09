@@ -36,109 +36,119 @@ Partial Class CurrencyConverter
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe Print", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(24, 20)
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label1.Location = New System.Drawing.Point(36, 31)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(303, 50)
+        Me.Label1.Size = New System.Drawing.Size(461, 66)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Currency Converter"
         '
         'ComboBox1
         '
+        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"euro", "peso", "pound sterling", "franc", "rupee"})
-        Me.ComboBox1.Location = New System.Drawing.Point(261, 86)
+        Me.ComboBox1.Location = New System.Drawing.Point(392, 134)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(174, 38)
+        Me.ComboBox1.Size = New System.Drawing.Size(259, 55)
         Me.ComboBox1.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.DarkBlue
-        Me.Label2.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(47, 92)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 13.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label2.Location = New System.Drawing.Point(82, 138)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(194, 26)
+        Me.Label2.Size = New System.Drawing.Size(296, 42)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "What type of currency?"
+        Me.Label2.Text = "Choose a currency:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.DarkBlue
-        Me.Label3.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label3.Location = New System.Drawing.Point(151, 162)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 13.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label3.Location = New System.Drawing.Point(226, 253)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 26)
+        Me.Label3.Size = New System.Drawing.Size(152, 42)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Amount?"
         '
         'txtAmount
         '
         Me.txtAmount.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmount.Location = New System.Drawing.Point(261, 162)
+        Me.txtAmount.Location = New System.Drawing.Point(392, 253)
+        Me.txtAmount.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtAmount.Name = "txtAmount"
-        Me.txtAmount.Size = New System.Drawing.Size(174, 34)
+        Me.txtAmount.Size = New System.Drawing.Size(259, 50)
         Me.txtAmount.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.DarkBlue
-        Me.Label4.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label4.Location = New System.Drawing.Point(108, 234)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 13.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label4.Location = New System.Drawing.Point(162, 366)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(124, 26)
+        Me.Label4.Size = New System.Drawing.Size(232, 42)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Dollar Amount"
         '
         'lblDollarAmount
         '
-        Me.lblDollarAmount.BackColor = System.Drawing.SystemColors.Control
+        Me.lblDollarAmount.BackColor = System.Drawing.SystemColors.Window
         Me.lblDollarAmount.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDollarAmount.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblDollarAmount.Location = New System.Drawing.Point(261, 234)
+        Me.lblDollarAmount.Location = New System.Drawing.Point(392, 366)
+        Me.lblDollarAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDollarAmount.Name = "lblDollarAmount"
-        Me.lblDollarAmount.Size = New System.Drawing.Size(174, 31)
+        Me.lblDollarAmount.Size = New System.Drawing.Size(261, 48)
         Me.lblDollarAmount.TabIndex = 6
         '
         'btnCalculate
         '
-        Me.btnCalculate.BackColor = System.Drawing.SystemColors.Control
-        Me.btnCalculate.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.ForeColor = System.Drawing.Color.DarkBlue
-        Me.btnCalculate.Location = New System.Drawing.Point(481, 159)
+        Me.btnCalculate.BackColor = System.Drawing.SystemColors.Window
+        Me.btnCalculate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.btnCalculate.Location = New System.Drawing.Point(722, 253)
+        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(124, 33)
+        Me.btnCalculate.Size = New System.Drawing.Size(186, 50)
         Me.btnCalculate.TabIndex = 7
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = False
         '
         'btnExit
         '
-        Me.btnExit.BackColor = System.Drawing.SystemColors.Control
-        Me.btnExit.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.DarkBlue
-        Me.btnExit.Location = New System.Drawing.Point(481, 234)
+        Me.btnExit.BackColor = System.Drawing.SystemColors.Window
+        Me.btnExit.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.btnExit.Location = New System.Drawing.Point(722, 366)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(124, 33)
+        Me.btnExit.Size = New System.Drawing.Size(186, 48)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = False
         '
         'CurrencyConverter
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkBlue
-        Me.ClientSize = New System.Drawing.Size(638, 307)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(957, 480)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblDollarAmount)
@@ -148,7 +158,6 @@ Partial Class CurrencyConverter
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "CurrencyConverter"
         Me.Text = "Currency Converter"
         Me.ResumeLayout(False)

@@ -20,9 +20,12 @@ Public Class UserLogin
 
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        pullData()
         If txtUsername.TextLength > 0 AndAlso txtPassword.TextLength > 0 Then
+            pullData()
+
             validateLogin(txtUsername.Text, txtPassword.Text)
+        Else
+            MessageBox.Show("Please make sure all fields are filled out.")
         End If
     End Sub
 
@@ -64,12 +67,40 @@ Public Class UserLogin
 
         Next counter
 
+        MessageBox.Show("Incorrect username and/or password")
+        txtUsername.Text = String.Empty
+        txtPassword.Text = String.Empty
+
 
     End Sub
 
-
+    Private Sub clearSignUp()
+        txtEmail.Text = String.Empty
+        txtFirstName.Text = String.Empty
+        txtLastName.Text = String.Empty
+        txtPassword1.Text = String.Empty
+    End Sub
 
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
+
+        Call pullData()
+
+        If txtEmail.TextLength > 0 Then
+            For counter As Integer = 0 To usernames.Count - 1
+                If decideUsername(txtEmail.Text).Equals(usernames.ElementAt(counter)) Then
+                    MessageBox.Show("An account already exists for this email.")
+                    Call clearSignUp()
+                    Exit Sub
+                End If
+            Next counter
+        End If
+
+        If txtEmail.TextLength < 1 Or txtFirstName.TextLength < 1 Or txtLastName.TextLength < 1 Or txtPassword1.TextLength < 1 Then
+            MessageBox.Show("Please make sure all fields are filled out.")
+            Call clearSignUp()
+            Exit Sub
+        End If
+
         username = decideUsername(txtEmail.Text)
         firstName = txtFirstName.Text.ToString.Trim
         lastName = txtLastName.Text.ToString.Trim
@@ -85,7 +116,6 @@ Public Class UserLogin
             con.Close()
         End Using
 
-        Call pullData()
         Call validateLogin(username, signUpPassword)
 
     End Sub
@@ -96,6 +126,8 @@ Public Class UserLogin
 
         If userEmail.Contains("@messiah.edu") Then
             username = userEmail.Substring(0, userEmail.IndexOf("@"))
+        Else
+            MessageBox.Show("Please enter a Messiah University email")
         End If
 
         Return username

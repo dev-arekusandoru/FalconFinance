@@ -47,7 +47,7 @@ Partial Class UserLogin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Calibri", 16.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Window
         Me.Label1.Location = New System.Drawing.Point(39, 41)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -63,7 +63,7 @@ Partial Class UserLogin
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtUsername)
         Me.GroupBox1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Window
         Me.GroupBox1.Location = New System.Drawing.Point(52, 180)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox1.Name = "GroupBox1"
@@ -75,14 +75,15 @@ Partial Class UserLogin
         '
         'btnLogin
         '
-        Me.btnLogin.ForeColor = System.Drawing.Color.DarkBlue
+        Me.btnLogin.BackColor = System.Drawing.SystemColors.Window
+        Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnLogin.Location = New System.Drawing.Point(86, 355)
         Me.btnLogin.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(279, 67)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = True
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -134,12 +135,12 @@ Partial Class UserLogin
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.txtEmail)
         Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(684, 41)
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Window
+        Me.GroupBox2.Location = New System.Drawing.Point(568, 41)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.GroupBox2.Size = New System.Drawing.Size(448, 603)
+        Me.GroupBox2.Size = New System.Drawing.Size(604, 603)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "New User"
@@ -157,10 +158,10 @@ Partial Class UserLogin
         '
         'txtLastName
         '
-        Me.txtLastName.Location = New System.Drawing.Point(218, 269)
+        Me.txtLastName.Location = New System.Drawing.Point(195, 267)
         Me.txtLastName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(188, 47)
+        Me.txtLastName.Size = New System.Drawing.Size(384, 47)
         Me.txtLastName.TabIndex = 7
         '
         'Label6
@@ -176,28 +177,29 @@ Partial Class UserLogin
         '
         'txtFirstName
         '
-        Me.txtFirstName.Location = New System.Drawing.Point(218, 173)
+        Me.txtFirstName.Location = New System.Drawing.Point(195, 171)
         Me.txtFirstName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(188, 47)
+        Me.txtFirstName.Size = New System.Drawing.Size(384, 47)
         Me.txtFirstName.TabIndex = 5
         '
         'btnSignUp
         '
-        Me.btnSignUp.ForeColor = System.Drawing.Color.DarkBlue
-        Me.btnSignUp.Location = New System.Drawing.Point(94, 494)
+        Me.btnSignUp.BackColor = System.Drawing.SystemColors.Window
+        Me.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.btnSignUp.Location = New System.Drawing.Point(160, 494)
         Me.btnSignUp.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnSignUp.Name = "btnSignUp"
         Me.btnSignUp.Size = New System.Drawing.Size(279, 67)
         Me.btnSignUp.TabIndex = 4
         Me.btnSignUp.Text = "Sign-Up"
-        Me.btnSignUp.UseVisualStyleBackColor = True
+        Me.btnSignUp.UseVisualStyleBackColor = False
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(32, 373)
+        Me.Label4.Location = New System.Drawing.Point(26, 374)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(144, 39)
@@ -206,10 +208,10 @@ Partial Class UserLogin
         '
         'txtPassword1
         '
-        Me.txtPassword1.Location = New System.Drawing.Point(218, 366)
+        Me.txtPassword1.Location = New System.Drawing.Point(195, 366)
         Me.txtPassword1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtPassword1.Name = "txtPassword1"
-        Me.txtPassword1.Size = New System.Drawing.Size(188, 47)
+        Me.txtPassword1.Size = New System.Drawing.Size(384, 47)
         Me.txtPassword1.TabIndex = 2
         '
         'Label5
@@ -225,10 +227,10 @@ Partial Class UserLogin
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(218, 75)
+        Me.txtEmail.Location = New System.Drawing.Point(195, 78)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(188, 47)
+        Me.txtEmail.Size = New System.Drawing.Size(384, 47)
         Me.txtEmail.TabIndex = 0
         '
         'UserLogin

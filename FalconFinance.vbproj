@@ -133,6 +133,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InterestCalculator.resx">
+      <DependentUpon>InterestCalculator.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoanCalculator.resx">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </EmbeddedResource>

@@ -3,10 +3,6 @@
     ' Hides the other forms when Currency Converter is open
     Private Sub CurrencyConverter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Form1.Hide()
-        InterestCalculator.Hide()
-        LoanCalculator.Hide()
-        UserLogin.Hide()
-
     End Sub
 
     ' Clears Dollar Amount if Type or Amount is changed
