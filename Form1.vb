@@ -8,9 +8,10 @@ Public Class Form1
 
     Dim firstName As String
     Dim lastName As String
-    Dim checkingBal As Double
-    Dim savingBal As Double
-    Dim emergencyBal As Double
+    Public userPass As String
+    Public checkingBal As Double
+    Public savingBal As Double
+    Public emergencyBal As Double
     Dim checkingP As Double
     Dim savingP As Double
     Dim emergencyP As Double
@@ -40,11 +41,12 @@ Public Class Form1
                 savingP = reader.GetValue(8)
                 emergencyP = reader.GetValue(9)
                 checkingP = 100 - (reader.GetValue(8) + reader.GetValue(9))
+                userPass = reader.GetValue(10)
             End While
 
             con.Close()
         End Using
-
+        MessageBox.Show(userPass)
         lblCheckingBalance.Text = checkingBal.ToString("c2")
         lblSavingsBalance.Text = savingBal.ToString("c2")
         lblEmergencyFundBalance.Text = emergencyBal.ToString("c2")
@@ -81,7 +83,7 @@ Public Class Form1
     End Sub
 
     ' Updates the balances in the table
-    Private Sub updateBalances()
+    Public Sub updateBalances()
         Using con = New OleDbConnection(ConnectionString)
             cmd = New OleDbCommand()
             cmd.CommandText = "UPDATE users SET checkingBal = " & checkingBal & ", savingBal = " & savingBal & ", emergencyBal = " & emergencyBal & " WHERE ID = " & tableId
@@ -90,6 +92,9 @@ Public Class Form1
             cmd.ExecuteReader()
             con.Close()
         End Using
+        lblCheckingBalance.Text = checkingBal.ToString("C2")
+        lblSavingsBalance.Text = savingBal.ToString("C2")
+        lblEmergencyFundBalance.Text = emergencyBal.ToString("C2")
     End Sub
 
     ' Prompt the user to deposit money
@@ -107,16 +112,13 @@ Public Class Form1
 
         Call updateBalances()
 
-        lblCheckingBalance.Text = checkingBal.ToString("C2")
-        lblSavingsBalance.Text = savingBal.ToString("C2")
-        lblEmergencyFundBalance.Text = emergencyBal.ToString("C2")
+
 
     End Sub
 
     ' Prompt the user to withdraw money
     Private Sub btnWithdraw_Click(sender As Object, e As EventArgs) Handles btnWithdraw.Click
         Withdraw.Show()
-        Me.Hide()
         LoanCalculator.Hide()
         CurrencyConverter.Hide()
         InterestCalculator.Hide()

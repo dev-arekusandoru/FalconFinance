@@ -29,7 +29,7 @@ Partial Class Withdraw
         Me.txtWithdrawAmount = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtVerify = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -113,14 +113,14 @@ Partial Class Withdraw
         Me.Button1.Text = "Withdraw"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtVerify
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(213, 261)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(150, 26)
-        Me.TextBox1.TabIndex = 4
+        Me.txtVerify.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtVerify.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.txtVerify.Location = New System.Drawing.Point(213, 261)
+        Me.txtVerify.Name = "txtVerify"
+        Me.txtVerify.Size = New System.Drawing.Size(150, 26)
+        Me.txtVerify.TabIndex = 4
         '
         'Label2
         '
@@ -152,7 +152,7 @@ Partial Class Withdraw
         Me.ClientSize = New System.Drawing.Size(401, 392)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtVerify)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtWithdrawAmount)
@@ -173,7 +173,7 @@ Partial Class Withdraw
     Friend WithEvents txtWithdrawAmount As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtVerify As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
 End Class
