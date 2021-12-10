@@ -12,9 +12,9 @@ Public Class Form1
     Public checkingBal As Double
     Public savingBal As Double
     Public emergencyBal As Double
-    Dim checkingP As Double
-    Dim savingP As Double
-    Dim emergencyP As Double
+    Public checkingP As Double
+    Public savingP As Double
+    Public emergencyP As Double
 
 
     ' Hides all other forms when Form 1 is open
@@ -49,14 +49,11 @@ Public Class Form1
         lblSavingsBalance.Text = savingBal.ToString("c2")
         lblEmergencyFundBalance.Text = emergencyBal.ToString("c2")
         lblWelcome.Text += ", " & firstName
-        MessageBox.Show(firstName)
-
     End Sub
 
     ' Show the Currency Converter form when button is clicked
     Private Sub btnCurrencyConverter_Click(sender As Object, e As EventArgs) Handles btnCurrencyConverter.Click
         CurrencyConverter.Show()
-        Me.Hide()
 
         CurrencyConverter.lblDollarAmount.Text = String.Empty
         CurrencyConverter.txtAmount.Text = String.Empty
@@ -67,13 +64,11 @@ Public Class Form1
     ' Show the Loan Calculator form when button is clicked
     Private Sub btnLoanCalculator_Click(sender As Object, e As EventArgs) Handles btnLoanCalculator.Click
         LoanCalculator.Show()
-        Me.Hide()
     End Sub
 
     ' Show the Interest Calculator form when button is clicked
     Private Sub btnInterestCalculator_Click(sender As Object, e As EventArgs) Handles btnInterestCalculator.Click
         InterestCalculator.Show()
-        Me.Hide()
     End Sub
 
     ' Close the form when Exit button is clicked
@@ -125,7 +120,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
-
+        settings.Show()
     End Sub
 
 

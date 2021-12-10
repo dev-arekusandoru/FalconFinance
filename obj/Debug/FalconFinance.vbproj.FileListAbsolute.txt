@@ -32,3 +32,4 @@ C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.xml
 C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.pdb
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.Withdraw.resources
 C:\Users\kylie\Source\Repos\FalconFinance1\obj\Debug\FalconFinance.Withdraw.resources
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.settings.resources
