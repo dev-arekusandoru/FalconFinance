@@ -78,24 +78,47 @@ Public Class Form1
         Me.Close()
     End Sub
 
-    Private Sub btnDeposit_Click(sender As Object, e As EventArgs) Handles btnDeposit.Click
-        Dim strAccount As String = InputBox("What account?")
-        Dim strMoney As String = InputBox("Amount?")
-        Dim dblCheckingBalance As Integer
-        Dim dblSavingsBalance As Integer
-        Dim dblEmergencyBalance As Integer
-
-        ' Integer.TryParse()
-
-        If strAccount = "Checking" Or "checking" Then
-            dblCheckingBalance = dblCheckingBalance + strMoney
-        ElseIf strAccount = "Savings" Or "savings" Then
-            dblSavingsBalance = dblSavingsBalance + strMoney
-        ElseIf strAccount = "Emergency Fund" Or "emergency fund" Or "Emergency fund" Then
-            dblEmergencyBalance = dblEmergencyBalance + strMoney
-        End If
+    ' Updates the balances in the table
+    Private Sub updateBalances()
+        Using con = New OleDbConnection(ConnectionString)
+            cmd = New OleDbCommand()
+            cmd.CommandText = "UPDATE users SET checkingBal = " & checkingBal & ", savingBal = " & savingBal & ", emergencyBal = " & emergencyBal & " WHERE ID = " & tableId
+            cmd.Connection = con
+            con.Open()
+            cmd.ExecuteReader()
+            con.Close()
+        End Using
     End Sub
 
+    ' Prompt the user to deposit money
+    Private Sub btnDeposit_Click(sender As Object, e As EventArgs) Handles btnDeposit.Click
+        Dim strAmount As String = InputBox("What account? " & checkingP & "% will be deposited to your checking account, " & savingP & "% to your savings, and " & emergencyP & "% to your emergency fund.")
+        Dim dblAmount As Double
+        Double.TryParse(strAmount, dblAmount)
+        Dim dblCheckingBalance As Double = (checkingP / 100) * dblAmount
+        Dim dblSavingsBalance As Double = (savingP / 100) * dblAmount
+        Dim dblEmergencyBalance As Double = (emergencyP / 100) * dblAmount
+
+        checkingBal += dblCheckingBalance
+        savingBal += dblCheckingBalance
+        emergencyBal += dblEmergencyBalance
+
+        Call updateBalances()
+
+        lblCheckingBalance.Text = checkingBal.ToString("C2")
+        lblSavingsBalance.Text = savingBal.ToString("C2")
+        lblEmergencyFundBalance.Text = emergencyBal.ToString("C2")
+
+    End Sub
+
+    ' Prompt the user to withdraw money
+    Private Sub btnWithdraw_Click(sender As Object, e As EventArgs) Handles btnWithdraw.Click
+
+    End Sub
+
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+
+    End Sub
 
 
 End Class

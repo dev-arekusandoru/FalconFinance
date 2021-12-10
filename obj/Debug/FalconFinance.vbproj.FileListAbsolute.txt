@@ -13,3 +13,4 @@ C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.exe
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.xml
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.pdb
 C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.vbproj.AssemblyReference.cache
+C:\Users\Arekusandoru\source\repos\FalconFinance\obj\Debug\FalconFinance.InterestCalculator.resources
