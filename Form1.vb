@@ -31,7 +31,6 @@ Public Class Form1
             con.Open()
             reader = cmd.ExecuteReader
 
-
             While reader.Read
                 firstName = reader.GetValue(3)
                 lastName = reader.GetValue(4)
@@ -46,11 +45,11 @@ Public Class Form1
 
             con.Close()
         End Using
-        MessageBox.Show(userPass)
         lblCheckingBalance.Text = checkingBal.ToString("c2")
         lblSavingsBalance.Text = savingBal.ToString("c2")
         lblEmergencyFundBalance.Text = emergencyBal.ToString("c2")
         lblWelcome.Text += ", " & firstName
+        MessageBox.Show(firstName)
 
     End Sub
 
