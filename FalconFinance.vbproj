@@ -125,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>usersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Withdraw.Designer.vb">
+      <DependentUpon>Withdraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Withdraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CurrencyConverter.resx">
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdraw.resx">
+      <DependentUpon>Withdraw.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
