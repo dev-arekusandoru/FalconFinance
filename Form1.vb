@@ -6,7 +6,8 @@ Public Class Form1
 
     Public tableId As Integer
 
-    Dim fullName As String
+    Dim firstName As String
+    Dim lastName As String
     Dim checkingBal As Double
     Dim savingBal As Double
     Dim emergencyBal As Double
@@ -31,7 +32,8 @@ Public Class Form1
 
 
             While reader.Read
-                fullName = reader.GetValue(3) & " " & reader.GetValue(4)
+                firstName = reader.GetValue(3)
+                lastName = reader.GetValue(4)
                 checkingBal = reader.GetValue(5)
                 savingBal = reader.GetValue(6)
                 emergencyBal = reader.GetValue(7)
@@ -46,7 +48,7 @@ Public Class Form1
         lblCheckingBalance.Text = checkingBal.ToString("c2")
         lblSavingsBalance.Text = savingBal.ToString("c2")
         lblEmergencyFundBalance.Text = emergencyBal.ToString("c2")
-        lblWelcome.Text += ", " & fullName.Substring(0, fullName.IndexOf(" "))
+        lblWelcome.Text += ", " & firstName
 
     End Sub
 
