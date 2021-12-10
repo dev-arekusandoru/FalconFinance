@@ -55,13 +55,15 @@ Public Class UserLogin
         Dim checkU As String = u
         Dim checkP As String = p
 
+        Call pullData()
+
         For counter As Integer = 0 To usernames.Count - 1
             If checkU.Contains(usernames.ElementAt(counter)) Then
                 If checkP.Contains(passwords.ElementAt(counter)) Then
                     Me.Hide()
                     Form1.tableId = counter + 1
                     Form1.Show()
-                    Exit For
+                    Exit Sub
                 End If
             End If
 
@@ -95,7 +97,7 @@ Public Class UserLogin
             Next counter
         End If
 
-        If txtEmail.TextLength < 1 Or txtFirstName.TextLength < 1 Or txtLastName.TextLength < 1 Or txtPassword1.TextLength < 1 Then
+        If txtEmail.TextLength < 1 OrElse txtFirstName.TextLength < 1 OrElse txtLastName.TextLength < 1 OrElse txtPassword1.TextLength < 1 Then
             MessageBox.Show("Please make sure all fields are filled out.")
             Call clearSignUp()
             Exit Sub
@@ -115,6 +117,7 @@ Public Class UserLogin
             cmd.ExecuteReader()
             con.Close()
         End Using
+
 
         Call validateLogin(username, signUpPassword)
 
