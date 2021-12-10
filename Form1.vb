@@ -115,7 +115,12 @@ Public Class Form1
 
     ' Prompt the user to withdraw money
     Private Sub btnWithdraw_Click(sender As Object, e As EventArgs) Handles btnWithdraw.Click
-
+        Withdraw.Show()
+        Me.Hide()
+        LoanCalculator.Hide()
+        CurrencyConverter.Hide()
+        InterestCalculator.Hide()
+        UserLogin.Hide()
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
