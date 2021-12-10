@@ -14,5 +14,13 @@
         Label2.Hide()
         TextBox1.Hide()
     End Sub
+
+    Private Sub Withdraw_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CurrencyConverter.Hide()
+        Form1.Hide()
+        InterestCalculator.Hide()
+        LoanCalculator.Hide()
+        UserLogin.Hide()
+    End Sub
 End Class
 
