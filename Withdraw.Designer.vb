@@ -31,6 +31,7 @@ Partial Class Withdraw
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -132,12 +133,24 @@ Partial Class Withdraw
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Password Verification:"
         '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(34, 324)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(150, 30)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Withdraw
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(401, 392)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
@@ -162,4 +175,5 @@ Partial Class Withdraw
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button2 As Button
 End Class
