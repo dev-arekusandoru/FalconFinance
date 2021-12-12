@@ -49,4 +49,33 @@ Public Class settings
     Private Sub back_Click(sender As Object, e As EventArgs) Handles back.Click
         Me.Hide()
     End Sub
+
+
+    Private Sub emergencyPercentBtn_Click(sender As Object, e As EventArgs) Handles emergencyPercentBtn.Click
+        Dim newP As String = InputBox("Enter a new percentage: 0-" & (100 - Form1.savingP))
+        Dim dblNewP As Double
+        Double.TryParse(newP, dblNewP)
+
+        If dblNewP >= 0 AndAlso dblNewP <= (100 - Form1.savingP) Then
+            Form1.emergencyP = dblNewP
+            Form1.checkingP = 100 - (Form1.savingP + Form1.emergencyP)
+
+            Call updatePercentages()
+            Call updateLabels()
+        Else
+            MessageBox.Show("Please enter a valid amount")
+        End If
+    End Sub
+
+    Private Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
+        Form1.Close()
+        LoanCalculator.Hide()
+        InterestCalculator.Hide()
+        Withdraw.Hide()
+        CurrencyConverter.Hide()
+        UserLogin.txtUsername.Text = String.Empty
+        UserLogin.txtPassword.Text = String.Empty
+        UserLogin.Show()
+        Me.Hide()
+    End Sub
 End Class

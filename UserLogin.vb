@@ -61,6 +61,7 @@ Public Class UserLogin
             If checkU.Contains(usernames.ElementAt(counter)) Then
                 If checkP.Contains(passwords.ElementAt(counter)) Then
                     Me.Hide()
+
                     Form1.tableId = counter + 1
                     Form1.Show()
                     Exit Sub
