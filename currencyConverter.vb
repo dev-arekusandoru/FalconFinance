@@ -1,10 +1,5 @@
 ﻿Public Class CurrencyConverter
 
-    ' Hides the other forms when Currency Converter is open
-    Private Sub CurrencyConverter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Form1.Hide()
-    End Sub
-
     ' Clears Dollar Amount if Type or Amount is changed
     Private Sub ClearDollarAmount(sender As Object, E As EventArgs) _
         Handles ComboBox1.TextChanged, txtAmount.TextChanged
@@ -14,10 +9,13 @@
 
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
-        Dim dblAmount As Double = txtAmount.Text
+        Dim dblAmount As Double
+        Double.TryParse(txtAmount.Text, dblAmount)
         Dim strType As String = ComboBox1.Text
         Dim dblDollarAmount As Double
         Dim strMessage As String = "You have neglected to select a currency type!"
+
+
 
         If strType = "euro" Then
             dblDollarAmount = dblAmount * 1.128

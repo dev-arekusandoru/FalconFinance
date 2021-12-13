@@ -8,8 +8,6 @@ Public Class settings
         Call updateLabels()
     End Sub
 
-
-
     Private Sub savingPercentBtn_Click(sender As Object, e As EventArgs) Handles savingPercentBtn.Click
         Dim newP As String = InputBox("Enter a new percentage: 0-" & (100 - Form1.emergencyP))
         Dim dblNewP As Double

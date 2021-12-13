@@ -1,10 +1,6 @@
 ﻿Public Class InterestCalculator
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Me.Close()
-    End Sub
-
-    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
-        'Gonna need help to connect to our other pages and use GitHub (again)
+        Me.Hide()
     End Sub
 
     Private Sub txtPayment_TextChanged(sender As Object, e As EventArgs) Handles txtPrinciple.TextChanged, txtTime.TextChanged, txtRate.TextChanged
@@ -30,7 +26,4 @@
         txtResult.Text = dblResult.ToString("c")
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
 End Class

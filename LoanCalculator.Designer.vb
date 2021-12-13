@@ -47,9 +47,10 @@ Partial Class LoanCalculator
         Me.lblPrincipal.AutoSize = True
         Me.lblPrincipal.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrincipal.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblPrincipal.Location = New System.Drawing.Point(20, 30)
+        Me.lblPrincipal.Location = New System.Drawing.Point(40, 58)
+        Me.lblPrincipal.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPrincipal.Name = "lblPrincipal"
-        Me.lblPrincipal.Size = New System.Drawing.Size(115, 18)
+        Me.lblPrincipal.Size = New System.Drawing.Size(219, 36)
         Me.lblPrincipal.TabIndex = 0
         Me.lblPrincipal.Text = "Principal Amount"
         '
@@ -58,24 +59,27 @@ Partial Class LoanCalculator
         Me.lblDuration.AutoSize = True
         Me.lblDuration.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDuration.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblDuration.Location = New System.Drawing.Point(20, 72)
+        Me.lblDuration.Location = New System.Drawing.Point(40, 138)
+        Me.lblDuration.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblDuration.Name = "lblDuration"
-        Me.lblDuration.Size = New System.Drawing.Size(121, 18)
+        Me.lblDuration.Size = New System.Drawing.Size(233, 36)
         Me.lblDuration.TabIndex = 1
         Me.lblDuration.Text = "Duration (Months)"
         '
         'txtPrincipal
         '
-        Me.txtPrincipal.Location = New System.Drawing.Point(142, 33)
+        Me.txtPrincipal.Location = New System.Drawing.Point(284, 63)
+        Me.txtPrincipal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPrincipal.Name = "txtPrincipal"
-        Me.txtPrincipal.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrincipal.Size = New System.Drawing.Size(196, 31)
         Me.txtPrincipal.TabIndex = 2
         '
         'txtDuration
         '
-        Me.txtDuration.Location = New System.Drawing.Point(142, 75)
+        Me.txtDuration.Location = New System.Drawing.Point(284, 144)
+        Me.txtDuration.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDuration.Name = "txtDuration"
-        Me.txtDuration.Size = New System.Drawing.Size(100, 20)
+        Me.txtDuration.Size = New System.Drawing.Size(196, 31)
         Me.txtDuration.TabIndex = 3
         '
         'gbRates
@@ -87,9 +91,11 @@ Partial Class LoanCalculator
         Me.gbRates.Controls.Add(Me.radRate)
         Me.gbRates.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbRates.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.gbRates.Location = New System.Drawing.Point(30, 129)
+        Me.gbRates.Location = New System.Drawing.Point(60, 248)
+        Me.gbRates.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.gbRates.Name = "gbRates"
-        Me.gbRates.Size = New System.Drawing.Size(268, 129)
+        Me.gbRates.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gbRates.Size = New System.Drawing.Size(536, 248)
         Me.gbRates.TabIndex = 4
         Me.gbRates.TabStop = False
         Me.gbRates.Text = "Rates"
@@ -98,34 +104,38 @@ Partial Class LoanCalculator
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(49, 62)
+        Me.Label3.Location = New System.Drawing.Point(98, 119)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 18)
+        Me.Label3.Size = New System.Drawing.Size(50, 36)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "OR"
         '
         'cbRate
         '
         Me.cbRate.FormattingEnabled = True
-        Me.cbRate.Location = New System.Drawing.Point(158, 87)
+        Me.cbRate.Location = New System.Drawing.Point(316, 167)
+        Me.cbRate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cbRate.Name = "cbRate"
-        Me.cbRate.Size = New System.Drawing.Size(100, 25)
+        Me.cbRate.Size = New System.Drawing.Size(196, 44)
         Me.cbRate.TabIndex = 3
         '
         'txtRate
         '
-        Me.txtRate.Location = New System.Drawing.Point(158, 29)
+        Me.txtRate.Location = New System.Drawing.Point(316, 56)
+        Me.txtRate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtRate.Name = "txtRate"
-        Me.txtRate.Size = New System.Drawing.Size(100, 25)
+        Me.txtRate.Size = New System.Drawing.Size(196, 43)
         Me.txtRate.TabIndex = 2
         '
         'radSelectList
         '
         Me.radSelectList.AutoSize = True
         Me.radSelectList.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.radSelectList.Location = New System.Drawing.Point(8, 87)
+        Me.radSelectList.Location = New System.Drawing.Point(16, 167)
+        Me.radSelectList.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.radSelectList.Name = "radSelectList"
-        Me.radSelectList.Size = New System.Drawing.Size(143, 22)
+        Me.radSelectList.Size = New System.Drawing.Size(268, 40)
         Me.radSelectList.TabIndex = 1
         Me.radSelectList.TabStop = True
         Me.radSelectList.Text = "Select from the list"
@@ -135,9 +145,10 @@ Partial Class LoanCalculator
         '
         Me.radRate.AutoSize = True
         Me.radRate.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.radRate.Location = New System.Drawing.Point(8, 30)
+        Me.radRate.Location = New System.Drawing.Point(16, 58)
+        Me.radRate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.radRate.Name = "radRate"
-        Me.radRate.Size = New System.Drawing.Size(156, 22)
+        Me.radRate.Size = New System.Drawing.Size(295, 40)
         Me.radRate.TabIndex = 0
         Me.radRate.TabStop = True
         Me.radRate.Text = "Enter rate in text box"
@@ -147,10 +158,11 @@ Partial Class LoanCalculator
         '
         Me.lstAmounts.Font = New System.Drawing.Font("Calibri", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstAmounts.FormattingEnabled = True
-        Me.lstAmounts.ItemHeight = 15
-        Me.lstAmounts.Location = New System.Drawing.Point(344, 33)
+        Me.lstAmounts.ItemHeight = 33
+        Me.lstAmounts.Location = New System.Drawing.Point(688, 63)
+        Me.lstAmounts.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lstAmounts.Name = "lstAmounts"
-        Me.lstAmounts.Size = New System.Drawing.Size(318, 214)
+        Me.lstAmounts.Size = New System.Drawing.Size(632, 400)
         Me.lstAmounts.TabIndex = 5
         '
         'btnCalc
@@ -158,9 +170,10 @@ Partial Class LoanCalculator
         Me.btnCalc.BackColor = System.Drawing.SystemColors.Window
         Me.btnCalc.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.btnCalc.Location = New System.Drawing.Point(30, 297)
+        Me.btnCalc.Location = New System.Drawing.Point(60, 571)
+        Me.btnCalc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalc.Size = New System.Drawing.Size(150, 50)
         Me.btnCalc.TabIndex = 6
         Me.btnCalc.Text = "Calculate"
         Me.btnCalc.UseVisualStyleBackColor = False
@@ -170,9 +183,10 @@ Partial Class LoanCalculator
         Me.btnClose.BackColor = System.Drawing.SystemColors.Window
         Me.btnClose.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClose.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.btnClose.Location = New System.Drawing.Point(132, 297)
+        Me.btnClose.Location = New System.Drawing.Point(264, 571)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.Size = New System.Drawing.Size(150, 50)
         Me.btnClose.TabIndex = 7
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = False
@@ -182,9 +196,10 @@ Partial Class LoanCalculator
         Me.lblMonthlyPayment.AutoSize = True
         Me.lblMonthlyPayment.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMonthlyPayment.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblMonthlyPayment.Location = New System.Drawing.Point(231, 300)
+        Me.lblMonthlyPayment.Location = New System.Drawing.Point(462, 577)
+        Me.lblMonthlyPayment.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblMonthlyPayment.Name = "lblMonthlyPayment"
-        Me.lblMonthlyPayment.Size = New System.Drawing.Size(118, 18)
+        Me.lblMonthlyPayment.Size = New System.Drawing.Size(224, 36)
         Me.lblMonthlyPayment.TabIndex = 8
         Me.lblMonthlyPayment.Text = "Monthly Payment"
         '
@@ -193,9 +208,10 @@ Partial Class LoanCalculator
         Me.lblTotalInterestPaid.AutoSize = True
         Me.lblTotalInterestPaid.Font = New System.Drawing.Font("Calibri", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalInterestPaid.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblTotalInterestPaid.Location = New System.Drawing.Point(459, 299)
+        Me.lblTotalInterestPaid.Location = New System.Drawing.Point(918, 575)
+        Me.lblTotalInterestPaid.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTotalInterestPaid.Name = "lblTotalInterestPaid"
-        Me.lblTotalInterestPaid.Size = New System.Drawing.Size(120, 18)
+        Me.lblTotalInterestPaid.Size = New System.Drawing.Size(228, 36)
         Me.lblTotalInterestPaid.TabIndex = 10
         Me.lblTotalInterestPaid.Text = "Total interest paid"
         '
@@ -203,26 +219,28 @@ Partial Class LoanCalculator
         '
         Me.lblMonthlyPay.BackColor = System.Drawing.SystemColors.Window
         Me.lblMonthlyPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMonthlyPay.Location = New System.Drawing.Point(344, 297)
+        Me.lblMonthlyPay.Location = New System.Drawing.Point(688, 571)
+        Me.lblMonthlyPay.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblMonthlyPay.Name = "lblMonthlyPay"
-        Me.lblMonthlyPay.Size = New System.Drawing.Size(100, 23)
+        Me.lblMonthlyPay.Size = New System.Drawing.Size(198, 42)
         Me.lblMonthlyPay.TabIndex = 11
         '
         'lblTotalInterestPay
         '
         Me.lblTotalInterestPay.BackColor = System.Drawing.SystemColors.Window
         Me.lblTotalInterestPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalInterestPay.Location = New System.Drawing.Point(585, 297)
+        Me.lblTotalInterestPay.Location = New System.Drawing.Point(1170, 571)
+        Me.lblTotalInterestPay.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTotalInterestPay.Name = "lblTotalInterestPay"
-        Me.lblTotalInterestPay.Size = New System.Drawing.Size(77, 23)
+        Me.lblTotalInterestPay.Size = New System.Drawing.Size(152, 42)
         Me.lblTotalInterestPay.TabIndex = 12
         '
         'LoanCalculator
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(690, 351)
+        Me.ClientSize = New System.Drawing.Size(1380, 675)
         Me.Controls.Add(Me.lblTotalInterestPay)
         Me.Controls.Add(Me.lblMonthlyPay)
         Me.Controls.Add(Me.lblTotalInterestPaid)
@@ -235,6 +253,7 @@ Partial Class LoanCalculator
         Me.Controls.Add(Me.txtPrincipal)
         Me.Controls.Add(Me.lblDuration)
         Me.Controls.Add(Me.lblPrincipal)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "LoanCalculator"
         Me.Text = "LoanCalculator"
         Me.gbRates.ResumeLayout(False)

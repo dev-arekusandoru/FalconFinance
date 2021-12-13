@@ -1,7 +1,6 @@
 ﻿Public Class LoanCalculator
     Private Sub LoanCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CurrencyConverter.Hide()
-        Form1.Hide()
         InterestCalculator.Hide()
         UserLogin.Hide()
     End Sub
