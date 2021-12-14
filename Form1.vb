@@ -101,7 +101,7 @@ Public Class Form1
         Dim dblEmergencyBalance As Double = (emergencyP / 100) * dblAmount
 
         checkingBal += dblCheckingBalance
-        savingBal += dblCheckingBalance
+        savingBal += dblSavingsBalance
         emergencyBal += dblEmergencyBalance
 
         Call updateBalances()

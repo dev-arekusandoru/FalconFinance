@@ -23,19 +23,24 @@
         Double.TryParse(txtWithdrawAmount.Text, dblAmount)
 
         If RadioButton1.Checked Then
-            If dblAmount < Form1.checkingBal Then
+            If dblAmount <= Form1.checkingBal Then
                 Form1.checkingBal = Form1.checkingBal - dblAmount
                 Form1.updateBalances()
+            Else
+                MessageBox.Show("Please enter a valid amount")
             End If
         ElseIf RadioButton2.Checked Then
-            If dblAmount < Form1.savingBal Then
+            If dblAmount <= Form1.savingBal Then
                 Form1.savingBal = Form1.savingBal - dblAmount
                 Form1.updateBalances()
+            Else
+                MessageBox.Show("Please enter a valid amount")
             End If
+
         ElseIf RadioButton3.Checked Then
             MessageBox.Show(Form1.userPass & ", " & txtVerify.Text.Trim.ToString)
             If Form1.userPass.Equals(txtVerify.Text.ToString.Trim) Then
-                If dblAmount < Form1.emergencyBal Then
+                If dblAmount <= Form1.emergencyBal Then
                     Form1.emergencyBal = Form1.emergencyBal - dblAmount
                     Form1.updateBalances()
                 Else
@@ -45,10 +50,6 @@
                 MessageBox.Show("Incorrect Password")
             End If
         End If
-
-
-        Me.Hide()
-        Form1.Show()
     End Sub
 
     Private Sub Withdraw_Load(sender As Object, e As EventArgs) Handles MyBase.Load
