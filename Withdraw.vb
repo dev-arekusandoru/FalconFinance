@@ -38,13 +38,12 @@
             End If
 
         ElseIf RadioButton3.Checked Then
-            MessageBox.Show(Form1.userPass & ", " & txtVerify.Text.Trim.ToString)
-            If Form1.userPass.Equals(txtVerify.Text.ToString.Trim) Then
+            If Form1.userPass.Equals(txtVerify.Text.ToString) Then
                 If dblAmount <= Form1.emergencyBal Then
                     Form1.emergencyBal = Form1.emergencyBal - dblAmount
                     Form1.updateBalances()
                 Else
-                    MessageBox.Show("Not enough money")
+                    MessageBox.Show("Please enter a valid amount")
                 End If
             Else
                 MessageBox.Show("Incorrect Password")

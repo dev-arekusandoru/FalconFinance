@@ -49,13 +49,13 @@ Partial Class CurrencyConverter
         '
         Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe Print", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"euro", "peso", "pound sterling", "franc", "rupee"})
         Me.ComboBox1.Location = New System.Drawing.Point(392, 135)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(260, 55)
+        Me.ComboBox1.Size = New System.Drawing.Size(260, 47)
         Me.ComboBox1.TabIndex = 1
         '
         'Label2
@@ -86,11 +86,11 @@ Partial Class CurrencyConverter
         '
         'txtAmount
         '
-        Me.txtAmount.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmount.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAmount.Location = New System.Drawing.Point(392, 254)
         Me.txtAmount.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.txtAmount.Name = "txtAmount"
-        Me.txtAmount.Size = New System.Drawing.Size(260, 50)
+        Me.txtAmount.Size = New System.Drawing.Size(260, 47)
         Me.txtAmount.TabIndex = 4
         '
         'Label4
@@ -109,8 +109,8 @@ Partial Class CurrencyConverter
         'lblDollarAmount
         '
         Me.lblDollarAmount.BackColor = System.Drawing.SystemColors.Window
-        Me.lblDollarAmount.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDollarAmount.ForeColor = System.Drawing.Color.DarkBlue
+        Me.lblDollarAmount.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDollarAmount.ForeColor = System.Drawing.SystemColors.Window
         Me.lblDollarAmount.Location = New System.Drawing.Point(392, 365)
         Me.lblDollarAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDollarAmount.Name = "lblDollarAmount"
@@ -158,9 +158,9 @@ Partial Class CurrencyConverter
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CurrencyConverter"
-        Me.Text = "5"
+        Me.Text = "Currency Converter"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

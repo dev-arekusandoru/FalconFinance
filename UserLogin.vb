@@ -8,6 +8,7 @@ Public Class UserLogin
     Private cmd As OleDbCommand
 
     'store usernames and passwords after pulled
+    Dim ids As New List(Of Integer)
     Dim usernames As New List(Of String)
     Dim passwords As New List(Of String)
 
@@ -30,20 +31,22 @@ Public Class UserLogin
     End Sub
 
     Private Sub pullData()
+        ids.Clear()
         usernames.Clear()
         passwords.Clear()
 
         Dim reader As OleDbDataReader = Nothing
         Using con = New OleDbConnection(ConnectionString)
             cmd = New OleDbCommand()
-            cmd.CommandText = "SELECT username,password FROM users"
+            cmd.CommandText = "SELECT ID,username,password FROM users"
             cmd.Connection = con
             con.Open()
             reader = cmd.ExecuteReader
 
             While reader.Read
-                usernames.Add(reader.GetValue(0).ToString)
-                passwords.Add(reader.GetValue(1).ToString)
+                ids.Add(reader.GetValue(0))
+                usernames.Add(reader.GetValue(1).ToString)
+                passwords.Add(reader.GetValue(2).ToString)
             End While
 
             con.Close()
@@ -62,7 +65,7 @@ Public Class UserLogin
                 If checkP.Contains(passwords.ElementAt(counter)) Then
                     Me.Hide()
 
-                    Form1.tableId = counter + 1
+                    Form1.tableId = ids.ElementAt(counter)
                     Form1.Show()
                     Exit Sub
                 End If
